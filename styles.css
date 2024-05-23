@@ -28,6 +28,7 @@ section {
 }
 h2,
 h3 {
+  margin: auto;
   margin-bottom: 1rem;
   color: transparent;
   font-weight: bold;
@@ -54,15 +55,16 @@ h3 {
 .cards-parent {
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 .card {
+  margin: auto;
   border: 1px solid var(--white);
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
-  flex-basis: 20rem;
+  flex-basis: 27rem;
 }
 
 .card figure img {
@@ -77,8 +79,39 @@ h3 {
 }
 
 .card:hover figure {
-    scale: 1.04;
-    transition: scale 900ms ease;
+  scale: 1.04;
+  transition: scale 900ms ease;
+}
+.card p {
+  justify-self: flex-start;
+  padding: 1rem;
+}
+
+/* price */
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.package-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.package {
+  margin: auto;
+  --color: color-mix(in oklch, var(--blue), var(--green));
+  height: 15rem;
+  padding: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.package:hover {
+  scale: 1.05;
+  border-color: var(--color);
+  filter: drop-shadow(0px 0px 5px var(--color));
+  transition: scale 900ms ease;
 }
 footer {
   background-color: black;
