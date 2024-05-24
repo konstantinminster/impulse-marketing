@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -9,9 +9,10 @@
 :root {
   --green: oklch(0.85 0.24 147.2);
   --orange: oklch(0.81 0.16 82.69);
+  --orange: oklch(0.81 0.16 82.69);
   --white: oklch(92.42% 0.001 197.14);
   --black: oklch(28.09% 0 0);
-  }
+}
 
 .wrapper {
   width: 80vw;
@@ -19,15 +20,15 @@
 }
 
 header {
-    background-color: var(--orange);
-    margin-bottom: 10px;
-    color: var(--black);
+  background-color: var(--orange);
+  background-color: var(--orange);
+  margin-bottom: 10px;
+  color: var(--black);
 }
 
 section {
   margin-bottom: 10px;
 }
-
 
 /* price */
 
@@ -36,7 +37,7 @@ section {
   flex-direction: column;
 }
 .package-parent {
-   grid-column: middle;
+  grid-column: middle;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 2rem;
@@ -56,79 +57,69 @@ section {
   transition: scale 900ms ease;
 }
 
-
-
 section.contact {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 section.contact h3 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-
 section.contact FORM {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;    
-    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 section.contact .form-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-section.contact  .contact-data,
-section.contact  .contact-message {
-    flex-basis: 47%;
+section.contact .contact-data,
+section.contact .contact-message {
+  flex-basis: 47%;
 }
 
-section.contact  label {
-    display: inline-block;
-    padding:  0.6rem;
-    font-size: 0.9em; 
+section.contact label {
+  display: inline-block;
+  padding: 0.6rem;
+  font-size: 0.9em;
 }
-
-
 
 section.contact input,
 section.contact textarea {
-    min-width: 70%;
-    padding: 0.6rem;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid darkgray;
-
+  min-width: 70%;
+  padding: 0.6rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid darkgray;
 }
 
 section.contact input:focus,
 section.contact textarea:focus {
-    background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 section.contact textarea {
-    height: 6.9rem;
+  height: 6.9rem;
 }
 
 .button-item {
-    width: 100%;
+  width: 100%;
 }
 
 .button-item button {
- padding:.5rem;
- background-color: black;
- color: white;
- font-weight: 600;
- text-transform: uppercase;
- border: none;
- float: right;
- margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  float: right;
+  margin-top: 1rem;
 }
 
 h1,
@@ -217,28 +208,27 @@ footer {
   color: white;
 }
 
-
 /* HENRYS CODE: NAV, HEADER, HERO, REFERENCES */
 
 header {
-    padding: 2rem 10vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+  padding: 2rem 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
-    width: 50px;
-    filter: invert(0);
-    margin-right: 1rem;
+  width: 50px;
+  filter: invert(0);
+  margin-right: 1rem;
 }
 
 #impulse-marketing {
@@ -248,77 +238,80 @@ header div {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
 }
 
 nav a {
-    color: var(--white);
-    background-color: var(--black);
-    padding: 1rem;
-    border-radius: 5px;
+  color: var(--white);
+  background-color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 5px;
 }
 
-
 .hero {
-    padding: 4rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .hero-left {
-    border: 1px solid;
-    padding: 2rem;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+  border: 1px solid;
+  padding: 2rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .hero-right {
-    border: 1px solid;
-    padding: 2rem;
-    border-radius: 15px;
+  border: 1px solid;
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .reference {
-    padding: 2rem 0rem;
-    margin: 6rem 0rem;
+  padding: 2rem 0rem;
+  margin: 6rem 0rem;
+  padding: 2rem 0rem;
+  margin: 6rem 0rem;
 }
 
 .reference h2 {
-    margin-bottom: 2rem;
-    text-align: center;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-
 .reference div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .reference img {
-    height: 50px;
-    margin: auto;
+  height: 50px;
+  margin: auto;
+  height: 50px;
+  margin: auto;
 }
 
 /* _________________________  */
-
 
 .footer {
   background-color: #f1f1f1;
   color: #333;
   padding: 40px 0;
   text-align: center;
-  border-top: 5px solid #007BFF;
+  border-top: 5px solid #007bff;
 }
 
 .footer-content {
@@ -345,18 +338,19 @@ nav a {
   transform: scale(1.1);
 }
 
-.footer-contact p, .footer-legal a {
+.footer-contact p,
+.footer-legal a {
   margin: 5px 0;
 }
 
 .footer-contact p a {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .footer-legal a {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -366,13 +360,14 @@ nav a {
 
 @media (min-width: 600px) {
   .footer-content {
-      flex-direction: row;
-      justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer-contact {
-      text-align: left;
+    text-align: left;
   }
-  .footer-social, .footer-legal {
-      text-align: right;
+  .footer-social,
+  .footer-legal {
+    text-align: right;
   }
 }
