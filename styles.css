@@ -7,13 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --blue: oklch(49.55% 0.192 280.49);
   --green: oklch(0.85 0.24 147.2);
-  --gold: oklch(0.87 0.18 90.85);
+  --orange: oklch(0.81 0.16 82.69);
   --white: oklch(92.42% 0.001 197.14);
   --black: oklch(28.09% 0 0);
-  --fancy-gradient: linear-gradient(to top, var(--blue), var(--green));
-}
+  }
 
 .wrapper {
   width: 80vw;
@@ -21,15 +19,13 @@
 }
 
 header {
-    background-color: darkgray;
+    background-color: var(--orange);
     margin-bottom: 10px;
+    color: var(--black);
 }
 
 section {
-  background-color: lightgrey;
   margin-bottom: 10px;
-
-    
 }
 
 
@@ -47,11 +43,11 @@ section {
 }
 .package {
   margin: auto;
-  --color: color-mix(in oklch, var(--blue), var(--green));
+  --color: color-mix(in oklch, var(--white), var(--orange));
   height: 15rem;
   padding: 1rem;
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--orange);
+  color: var(--black);
 }
 .package:hover {
   scale: 1.05;
@@ -135,14 +131,16 @@ section.contact textarea {
  margin-top: 1rem;
 }
 
-.paragraph_headings {
+h1,
+h2,
+h3 {
   margin: 1rem auto;
-  color: transparent;
   font-weight: bold;
-  background-image: var(--fancy-gradient);
-  background-clip: text;
+  color: var(--black);
 }
-
+.service-paragraph {
+  color: var(--orange);
+}
 .services {
   display: flex;
   flex-direction: column;
@@ -220,7 +218,7 @@ footer {
 }
 
 
-/* HENRYS CODE */
+/* HENRYS CODE: NAV, HEADER, HERO, REFERENCES */
 
 header {
     padding: 2rem 10vw;
@@ -239,8 +237,14 @@ header div {
 
 #logo {
     width: 50px;
-    filter: invert(1);
+    filter: invert(0);
     margin-right: 1rem;
+}
+
+#impulse-marketing {
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: underline;
 }
 
 nav {
@@ -250,10 +254,10 @@ nav {
 }
 
 nav a {
-    border: 1px solid white;
+    color: var(--white);
+    background-color: var(--black);
     padding: 1rem;
     border-radius: 5px;
-    color: inherit;
 }
 
 
@@ -283,7 +287,8 @@ nav a {
 }
 
 .reference {
-    padding: 2rem;
+    padding: 2rem 0rem;
+    margin: 6rem 0rem;
 }
 
 .reference h2 {
@@ -301,7 +306,8 @@ nav a {
 }
 
 .reference img {
-    height: 100px;
+    height: 50px;
+    margin: auto;
 }
 
 /* _________________________  */
