@@ -30,7 +30,6 @@ section {
 
 
 /* price */
-
 .price {
   display: flex;
   flex-direction: column;
@@ -141,9 +140,13 @@ h3 {
 .service-paragraph {
   color: var(--orange);
 }
-.services {
+.services, .services-package {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.services-package{
+  margin-top: 4rem;
 }
 
 #introduction {
