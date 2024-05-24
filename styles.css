@@ -7,13 +7,12 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --blue: oklch(49.55% 0.192 280.49);
   --green: oklch(0.85 0.24 147.2);
+  --orange: oklch(0.81 0.16 82.69);
   --orange: oklch(0.81 0.16 82.69);
   --white: oklch(92.42% 0.001 197.14);
   --black: oklch(28.09% 0 0);
-  --fancy-gradient: linear-gradient(to top, var(--blue), var(--green));
-}
+  }
 
 .wrapper {
   width: 80vw;
@@ -22,15 +21,14 @@
 
 header {
     background-color: var(--orange);
+    background-color: var(--orange);
     margin-bottom: 10px;
+    color: var(--black);
     color: var(--black);
 }
 
 section {
-  /* background-color: lightgrey; */
   margin-bottom: 10px;
-
-    
 }
 
 
@@ -48,11 +46,11 @@ section {
 }
 .package {
   margin: auto;
-  --color: color-mix(in oklch, var(--blue), var(--green));
+  --color: color-mix(in oklch, var(--white), var(--orange));
   height: 15rem;
   padding: 1rem;
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--orange);
+  color: var(--black);
 }
 .package:hover {
   scale: 1.05;
@@ -138,15 +136,14 @@ section.contact textarea {
 
 h1,
 h2,
-h3,
-.paragraph_headings {
+h3 {
   margin: 1rem auto;
-  color: transparent;
   font-weight: bold;
   color: var(--black);
-  background-clip: text;
 }
-
+.service-paragraph {
+  color: var(--orange);
+}
 .services {
   display: flex;
   flex-direction: column;
